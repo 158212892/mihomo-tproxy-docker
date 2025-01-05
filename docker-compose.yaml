@@ -18,6 +18,8 @@ services:
     volumes:
       - './config.yaml:/mihomo/config/config.yaml'
       - './cn_cidr.txt:/mihomo/config/cn_cidr.txt'
+     # sysctls:
+     #            net.ipv4.ip_forward: 1
 
 networks:
   mihomovlan:
